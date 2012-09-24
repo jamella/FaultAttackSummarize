@@ -1,5 +1,6 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage{CJK}
+\usepackage{graphicx}
 \begin{document}
 
 \begin{CJK}{UTF8}{gkai}
@@ -34,9 +35,73 @@
 \subsubsection{故障分析和功耗等旁路分析方法的结合}
 \subsubsection{故障攻击在未知但可区分的故障模型下的应用}
 \subsection{各类密码结构/算法的故障分析方法：针对常用的对称密码和非对称密码，给出其结构弱点和故障攻击分析方式}
-\subsubsection{DES故障攻击}
-1996年，Biham和Shamir第一次提出了对DES的差分故障攻击（DFA），之后又有一些文章对此进行了扩展和改进，本章主要介绍针对DES的后两轮原始故障攻击、中间轮故障攻击及基于内部碰撞的前几轮故障攻击。
-\subsubsubsection{原始故障攻击}
+\subsection{DES故障攻击}
+1996年，Biham和Shamir第一次提出了对DES的差分故障攻击（DFA），之后又有一些文章对此进行了扩展和改进，本节首先简要介绍DES算法，然后引入针对DES的后两轮原始故障攻击、中间轮故障攻击及基于内部碰撞的前几轮故障攻击。
+\subsubsection{DES算法}
+DES为64位的16轮Feistel结构(见图\ref{des_feistel})，每一轮的变换为$F_{K_r(L,R)=(R,L \oplus f_{K_r}(R))}$,其中L，R分别表示数据的左右部分，f是以48位密钥$K_r$为参数的32位输入到32位输出的映射函数（见图\ref{des_f_function}）
+\begin{figure}
+\centering
+\caption{Des feistel结构}
+\includegraphics[width=200pt]{Feistel.jpg}
+\label{des_feistel}
+\end{figure}
+
+\begin{figure}
+\centering
+\caption{f函数}
+\includegraphics[width=400pt]{des_f_function.jpg}
+\label{des_f_function}
+\end{figure}
+
+
+\subsubsection{对DES的第16轮攻击}
+假设在第16轮开始的时候，$R_{15}$的一些比特翻转，那么由图\ref{des_feistel}可得$R_{16}$和$R_{16}^*$的差分满足等式：
+
+\begin{equation}
+\label{eq:3_1}
+\delta R_{16} = f_{K_{16}} \oplus f_{K_{16}}(L_{16}^*)
+\end{equation}
+
+由图\ref{des_f_function}可知，f函数中的S盒独立进行计算，所以上式可以转换成8个等式,其中$(1 \leq i \leq 8)$：
+
+\begin{equation}
+\label{eq:3_2}
+P_i^{-1}(\delta R_{16}) = S_i(E_i(L_{16}) \oplus K_{16,i}) \oplus S_i(E_i(L_{16}^*) \oplus K_{16,i})
+\end{equation}
+
+因此攻击者可以通过验证$K_{16,i}$的所有可能值${0,1}^6$,排除不满足等式\ref{eq:3_2}的值，最终得到密钥。值得注意的是本攻击只适用于只影响$R_{15}$的故障故障类型，并且$R_{15}$被故障翻转的比特数越多，有效的S盒也越多（即受影响的S盒），所需要的密文对$(C,C^*)$则越少。
+
+\subsubsection{对DES的第15轮攻击}
+假设在第15轮开始的时候，在$R_{14}$上注入单比特故障，令$R_{14}^*=R_{14} \oplus \epsilon$，由图\ref{des_error_propagation_15_round}可得：
+
+\begin{equation}
+\label{eq:3_3}
+\delta R_{16} = f_{K_{16}}(L_{16}) \oplus f_{K_{16}}(L_{16}^*) \oplus \epsilon
+\end{equation}
+
+在上式中$K_{16}$不是唯一的未知参数，因此接下来需要确定或者缩小$\epsilon$的取值范围。利用式\ref{eq:3_4}可以推出第15轮的有效S盒，进而可以根据S盒的有效情况缩小$\epsilon$的取值范围，如果两个S盒有效，则$\epsilon$的值有2种可能，因为由图\ref{des_f_function}可知每对S盒最多共享两个输入比特；同理如果只有一个S盒有效，$\epsilon$的值也有两种可能，因为有效S盒的6个输入比特中与相邻S盒无关的只有2个比特。
+
+\begin{equation}
+\label{eq:3_4}
+\delta L_{16} = f_{K_{15}}(R_{14}) \oplus f_{K_{15}}(R_{14}) \oplus \epsilon
+\end{equation}
+
+\begin{figure}
+\centering
+\caption{15轮的错误扩散}
+\includegraphics[width=200pt]{des_15_round_propagation.jpg}
+\label{des_error_propagation_15_round}
+\end{figure}
+
+一旦$\epsilon$的范围确定，就可以用等式\ref{eq:3_3}推出8等式\ref{eq:3_5}(其中$1 \leq i \leq 8$），进而筛选出密钥$K_{16}$。
+
+\begin{equation}
+\label{eq:3_5}
+P_i^{-1}(\delta R_{16} \oplus \epsilon) = S_i(E_i(L_{16}) \oplus K_{16,i}) \oplus S_i(E_i(L_{16}^*) \oplus K_{16,i})
+\end{equation}
+
+与上一节的攻击相比，本攻击为单比特故障模型（或者只有很少的几个比特故障），因为需要缩小$\epsilon$的取值范围。又因为在第16轮错误被扩散到多个S盒，所以$K_{16}$的筛选效率并不比第16轮的攻击低多少。
+
 \subsubsection{AES故障攻击}
 \subsubsection{RSA故障攻击}
 \subsubsection{ECC故障攻击}
