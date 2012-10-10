@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.19)  24 SEP 2012 14:37
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.19)  10 OCT 2012 16:41
 entering extended mode
 **C:/Users/John/Documents/GitHub/fault_attack_summarize/FaultAttackSummarize/co
 ntent.tex
@@ -238,22 +238,67 @@ File: des_15_round_propagation.jpg Graphic file (type jpg)
 Package pdftex.def Info: des_15_round_propagation.jpg used on input line 92.
 (pdftex.def)             Requested size: 200.0pt x 222.46574pt.
  [4 <C:/Users/John/Documents/GitHub/fault_attack_summarize/FaultAttackSummarize
-/des_f_function.jpg>]
-Overfull \vbox (1.4032pt too high) has occurred while \output is active []
+/des_f_function.jpg>] [5 <C:/Users/John/Documents/GitHub/fault_attack_summarize
+/FaultAttackSummarize/des_15_round_propagation.jpg>]
+Overfull \hbox (757.83722pt too wide) detected at line 121
+\OML/cmm/m/it/12 MC[]\OMS/cmsy/m/n/12 j[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 SB[]
+\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\O
+T1/cmr/m/n/12 )) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 MC[]\OMS/cmsy/m/n/12 j[]\O
+T1/cmr/m/n/12 (\OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/
+cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 6\OT1/cmr/
+m/n/12 = 0\OML/cmm/m/it/12 MC[]\OMS/cmsy/m/n/12 j[]\OT1/cmr/m/n/12 (\OML/cmm/m/
+it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/i
+t/12 K[]\OT1/cmr/m/n/12 )) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 MC[]\OMS/cmsy/m/
+n/12 j[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 
+6\OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 MC[]\OMS/cmsy/m/n/12 j[]\OT1/cmr/m/n/12 (\
+OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \O
+ML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 )) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 MC[]\O
+MS/cmsy/m/n/12 j[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/c
+mm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 ) \OMS/cm
+sy/m/n/12 6\OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 MC[]\OMS/cmsy/m/n/12 j[]\OT1/cmr
+/m/n/12 (\OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m
+/n/12  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 )) \OMS/cmsy/m/n/12  \OML/cmm/m/it
+/12 MC[]\OMS/cmsy/m/n/12 j[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12
+ ) \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 = 0
+ []
 
 
-[5 <C:/Users/John/Documents/GitHub/fault_attack_summarize/FaultAttackSummarize/
-des_15_round_propagation.jpg>]
+Overfull \hbox (716.49765pt too wide) detected at line 129
+\OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \
+OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 SB[]\O
+T1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1
+/cmr/m/n/12 ) = 2(\OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \O
+MS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/
+cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/c
+mm/m/it/12 K[]\OT1/cmr/m/n/12 ))\OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/
+m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 ) \OMS/cmsy/
+m/n/12  \OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m
+/n/12  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 SB[]\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n
+/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 S
+B[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[
+]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OM
+L/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 ) = 3(
+\OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \
+OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 SB[]\O
+T1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1
+/cmr/m/n/12 ))
+ []
+
+[6] [7] [8]
 (C:\Users\John\Documents\GitHub\fault_attack_summarize\FaultAttackSummarize\con
 tent.aux) ) 
 Here is how much of TeX's memory you used:
- 2877 strings out of 494045
- 39398 string characters out of 3155644
- 100670 words of memory out of 3000000
- 6111 multiletter control sequences out of 15000+200000
+ 3052 strings out of 494045
+ 42984 string characters out of 3155644
+ 102670 words of memory out of 3000000
+ 6286 multiletter control sequences out of 15000+200000
  43068 words of font info for 153 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,6n,29p,775b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,29p,1511b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
 <H:/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><H:/miktex/font
 s/type1/public/amsfonts/cm/cmmi12.pfb><H:/miktex/fonts/type1/public/amsfonts/cm
 /cmmi6.pfb><H:/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><H:/miktex/fonts
@@ -304,9 +349,9 @@ u/gkaiu96.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu97.pfb><H:/miktex/fonts/
 type1/arphic/gkaiu/gkaiu98.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu99.pfb>
 <H:/miktex/fonts/type1/arphic/gkaiu/gkaiu9a.pfb><H:/miktex/fonts/type1/arphic/g
 kaiu/gkaiuff.pfb>
-Output written on content.pdf (5 pages, 613189 bytes).
+Output written on content.pdf (8 pages, 724378 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
+ 352 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
