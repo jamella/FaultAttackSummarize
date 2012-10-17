@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.19)  10 OCT 2012 16:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.19)  10 OCT 2012 21:46
 entering extended mode
 **C:/Users/John/Documents/GitHub/fault_attack_summarize/FaultAttackSummarize/co
 ntent.tex
@@ -238,9 +238,30 @@ File: des_15_round_propagation.jpg Graphic file (type jpg)
 Package pdftex.def Info: des_15_round_propagation.jpg used on input line 92.
 (pdftex.def)             Requested size: 200.0pt x 222.46574pt.
  [4 <C:/Users/John/Documents/GitHub/fault_attack_summarize/FaultAttackSummarize
-/des_f_function.jpg>] [5 <C:/Users/John/Documents/GitHub/fault_attack_summarize
-/FaultAttackSummarize/des_15_round_propagation.jpg>]
-Overfull \hbox (757.83722pt too wide) detected at line 121
+/des_f_function.jpg>]
+Overfull \hbox (14.27885pt too wide) in paragraph at lines 113--114
+\C70/gkai/m/n/12/76 „ \C70/gkai/m/n/12/ff  \C70/gkai/bx/n/12/75 1 \C70/gkai/m/
+n/12/56 þ\OT1/cmr/m/n/12 4[]\C70/gkai/m/n/12/53 ï \C70/gkai/bx/n/12/77 å \C70/g
+kai/m/n/12/ff $\OML/cmm/m/it/12 L[]$\C70/gkai/m/n/12/52 0$\OML/cmm/m/it/12 L[]
+$\C70/gkai/bx/n/12/4e Å \C70/gkai/bx/n/12/7e Ï \C70/gkai/bx/n/12/8f Ç\OT1/cmr/m
+/n/12 f\C70/gkai/m/n/12/51 ý \C70/gkai/m/n/12/65 p\OT1/cmr/m/n/12 1\C70/gkai/m/
+n/12/6b ! \C70/gkai/m/n/12/ff $\OML/cmm/m/it/12 L[]$\C70/gkai/m/n/12/52 0$\OML
+/cmm/m/it/12 L[]$\C70/gkai/bx/n/12/7e Ï \C70/gkai/bx/n/12/8f Ç\OT1/cmr/m/n/12 2
+\C70/gkai/m/n/12/6b ! \C70/gkai/bx/n/12/30  \C70/gkai/bx/n/12/75 1 \C70/gkai/b
+x/n/12/4e Ž\OT1/cmr/m/n/12 DES\C70/gkai/m/n/12/76 „\OT1/cmr/m/n/12 f\C70/gkai/m
+/n/12/51 ý
+ []
+
+<des_error_propagation.jpg, id=97, 218.31563pt x 324.46219pt>
+File: des_error_propagation.jpg Graphic file (type jpg)
+
+<use des_error_propagation.jpg>
+Package pdftex.def Info: des_error_propagation.jpg used on input line 118.
+(pdftex.def)             Requested size: 200.0pt x 297.2414pt.
+ [5 <C:/Users/John/Documents/GitHub/fault_attack_summarize/FaultAttackSummarize
+/des_15_round_propagation.jpg>] [6 <C:/Users/John/Documents/GitHub/fault_attack
+_summarize/FaultAttackSummarize/des_error_propagation.jpg>] [7]
+Overfull \hbox (757.83722pt too wide) detected at line 182
 \OML/cmm/m/it/12 MC[]\OMS/cmsy/m/n/12 j[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 SB[]
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\O
 T1/cmr/m/n/12 )) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 MC[]\OMS/cmsy/m/n/12 j[]\O
@@ -265,7 +286,7 @@ sy/m/n/12 6\OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 MC[]\OMS/cmsy/m/n/12 j[]\OT1/cmr
  []
 
 
-Overfull \hbox (716.49765pt too wide) detected at line 129
+Overfull \hbox (716.49765pt too wide) detected at line 190
 \OML/cmm/m/it/12 SB[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \
 OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 SB[]\O
 T1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1
@@ -288,70 +309,71 @@ T1/cmr/m/n/12 (\OML/cmm/m/it/12 C[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 K[]\OT1
 /cmr/m/n/12 ))
  []
 
-[6] [7] [8]
+[8] [9] [10] [11]
 (C:\Users\John\Documents\GitHub\fault_attack_summarize\FaultAttackSummarize\con
 tent.aux) ) 
 Here is how much of TeX's memory you used:
- 3052 strings out of 494045
- 42984 string characters out of 3155644
- 102670 words of memory out of 3000000
- 6286 multiletter control sequences out of 15000+200000
- 43068 words of font info for 153 fonts, out of 3000000 for 9000
+ 3081 strings out of 494045
+ 43573 string characters out of 3155644
+ 105694 words of memory out of 3000000
+ 6313 multiletter control sequences out of 15000+200000
+ 43365 words of font info for 154 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,6n,29p,1511b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,29p,1511b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
 <H:/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><H:/miktex/font
-s/type1/public/amsfonts/cm/cmmi12.pfb><H:/miktex/fonts/type1/public/amsfonts/cm
-/cmmi6.pfb><H:/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><H:/miktex/fonts
-/type1/public/amsfonts/cm/cmr12.pfb><H:/miktex/fonts/type1/public/amsfonts/cm/c
-mr6.pfb><H:/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><H:/miktex/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb><H:/miktex/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu30.pfb><H:/miktex/fonts/type1/ar
-phic/gkaiu/gkaiu4e.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu4f.pfb><H:/mikt
-ex/fonts/type1/arphic/gkaiu/gkaiu50.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gka
-iu51.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu52.pfb><H:/miktex/fonts/type1
-/arphic/gkaiu/gkaiu53.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu54.pfb><H:/m
-iktex/fonts/type1/arphic/gkaiu/gkaiu55.pfb><H:/miktex/fonts/type1/arphic/gkaiu/
-gkaiu56.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu57.pfb><H:/miktex/fonts/ty
-pe1/arphic/gkaiu/gkaiu58.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu59.pfb><H
-:/miktex/fonts/type1/arphic/gkaiu/gkaiu5b.pfb><H:/miktex/fonts/type1/arphic/gka
-iu/gkaiu5c.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu5d.pfb><H:/miktex/fonts
-/type1/arphic/gkaiu/gkaiu5e.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu5f.pfb
-><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu60.pfb><H:/miktex/fonts/type1/arphic/
-gkaiu/gkaiu61.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu62.pfb><H:/miktex/fo
-nts/type1/arphic/gkaiu/gkaiu63.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu64.
-pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu65.pfb><H:/miktex/fonts/type1/arph
-ic/gkaiu/gkaiu66.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu67.pfb><H:/miktex
-/fonts/type1/arphic/gkaiu/gkaiu68.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu
-69.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu6a.pfb><H:/miktex/fonts/type1/a
-rphic/gkaiu/gkaiu6b.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu6c.pfb><H:/mik
-tex/fonts/type1/arphic/gkaiu/gkaiu6d.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gk
-aiu6e.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu6f.pfb><H:/miktex/fonts/type
-1/arphic/gkaiu/gkaiu70.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu71.pfb><H:/
-miktex/fonts/type1/arphic/gkaiu/gkaiu72.pfb><H:/miktex/fonts/type1/arphic/gkaiu
-/gkaiu73.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu74.pfb><H:/miktex/fonts/t
-ype1/arphic/gkaiu/gkaiu75.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu76.pfb><
-H:/miktex/fonts/type1/arphic/gkaiu/gkaiu77.pfb><H:/miktex/fonts/type1/arphic/gk
-aiu/gkaiu78.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu79.pfb><H:/miktex/font
-s/type1/arphic/gkaiu/gkaiu7a.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu7b.pf
-b><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu7c.pfb><H:/miktex/fonts/type1/arphic
-/gkaiu/gkaiu7d.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu7e.pfb><H:/miktex/f
-onts/type1/arphic/gkaiu/gkaiu7f.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu80
-.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu81.pfb><H:/miktex/fonts/type1/arp
-hic/gkaiu/gkaiu82.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu83.pfb><H:/mikte
-x/fonts/type1/arphic/gkaiu/gkaiu86.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkai
-u88.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu89.pfb><H:/miktex/fonts/type1/
-arphic/gkaiu/gkaiu8b.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu8c.pfb><H:/mi
-ktex/fonts/type1/arphic/gkaiu/gkaiu8d.pfb><H:/miktex/fonts/type1/arphic/gkaiu/g
-kaiu8f.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu90.pfb><H:/miktex/fonts/typ
-e1/arphic/gkaiu/gkaiu91.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu94.pfb><H:
-/miktex/fonts/type1/arphic/gkaiu/gkaiu95.pfb><H:/miktex/fonts/type1/arphic/gkai
-u/gkaiu96.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu97.pfb><H:/miktex/fonts/
-type1/arphic/gkaiu/gkaiu98.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu99.pfb>
-<H:/miktex/fonts/type1/arphic/gkaiu/gkaiu9a.pfb><H:/miktex/fonts/type1/arphic/g
-kaiu/gkaiuff.pfb>
-Output written on content.pdf (8 pages, 724378 bytes).
+s/type1/public/amsfonts/cm/cmex10.pfb><H:/miktex/fonts/type1/public/amsfonts/cm
+/cmmi12.pfb><H:/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><H:/miktex/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><H:/miktex/fonts/type1/public/amsfonts/cm/
+cmr12.pfb><H:/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><H:/miktex/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb><H:/miktex/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><H:/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><H:/miktex/fonts/typ
+e1/arphic/gkaiu/gkaiu30.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu4e.pfb><H:
+/miktex/fonts/type1/arphic/gkaiu/gkaiu4f.pfb><H:/miktex/fonts/type1/arphic/gkai
+u/gkaiu50.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu51.pfb><H:/miktex/fonts/
+type1/arphic/gkaiu/gkaiu52.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu53.pfb>
+<H:/miktex/fonts/type1/arphic/gkaiu/gkaiu54.pfb><H:/miktex/fonts/type1/arphic/g
+kaiu/gkaiu55.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu56.pfb><H:/miktex/fon
+ts/type1/arphic/gkaiu/gkaiu57.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu58.p
+fb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu59.pfb><H:/miktex/fonts/type1/arphi
+c/gkaiu/gkaiu5b.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu5c.pfb><H:/miktex/
+fonts/type1/arphic/gkaiu/gkaiu5d.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu5
+e.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu5f.pfb><H:/miktex/fonts/type1/ar
+phic/gkaiu/gkaiu60.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu61.pfb><H:/mikt
+ex/fonts/type1/arphic/gkaiu/gkaiu62.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gka
+iu63.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu64.pfb><H:/miktex/fonts/type1
+/arphic/gkaiu/gkaiu65.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu66.pfb><H:/m
+iktex/fonts/type1/arphic/gkaiu/gkaiu67.pfb><H:/miktex/fonts/type1/arphic/gkaiu/
+gkaiu68.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu69.pfb><H:/miktex/fonts/ty
+pe1/arphic/gkaiu/gkaiu6a.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu6b.pfb><H
+:/miktex/fonts/type1/arphic/gkaiu/gkaiu6c.pfb><H:/miktex/fonts/type1/arphic/gka
+iu/gkaiu6d.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu6e.pfb><H:/miktex/fonts
+/type1/arphic/gkaiu/gkaiu6f.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu70.pfb
+><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu71.pfb><H:/miktex/fonts/type1/arphic/
+gkaiu/gkaiu72.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu73.pfb><H:/miktex/fo
+nts/type1/arphic/gkaiu/gkaiu74.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu75.
+pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu76.pfb><H:/miktex/fonts/type1/arph
+ic/gkaiu/gkaiu77.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu78.pfb><H:/miktex
+/fonts/type1/arphic/gkaiu/gkaiu79.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu
+7a.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu7b.pfb><H:/miktex/fonts/type1/a
+rphic/gkaiu/gkaiu7c.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu7d.pfb><H:/mik
+tex/fonts/type1/arphic/gkaiu/gkaiu7e.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gk
+aiu7f.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu80.pfb><H:/miktex/fonts/type
+1/arphic/gkaiu/gkaiu81.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu82.pfb><H:/
+miktex/fonts/type1/arphic/gkaiu/gkaiu83.pfb><H:/miktex/fonts/type1/arphic/gkaiu
+/gkaiu84.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu86.pfb><H:/miktex/fonts/t
+ype1/arphic/gkaiu/gkaiu88.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu89.pfb><
+H:/miktex/fonts/type1/arphic/gkaiu/gkaiu8b.pfb><H:/miktex/fonts/type1/arphic/gk
+aiu/gkaiu8c.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu8d.pfb><H:/miktex/font
+s/type1/arphic/gkaiu/gkaiu8f.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu90.pf
+b><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu91.pfb><H:/miktex/fonts/type1/arphic
+/gkaiu/gkaiu94.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu95.pfb><H:/miktex/f
+onts/type1/arphic/gkaiu/gkaiu96.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu97
+.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu98.pfb><H:/miktex/fonts/type1/arp
+hic/gkaiu/gkaiu99.pfb><H:/miktex/fonts/type1/arphic/gkaiu/gkaiu9a.pfb><H:/mikte
+x/fonts/type1/arphic/gkaiu/gkaiuff.pfb>
+Output written on content.pdf (11 pages, 787652 bytes).
 PDF statistics:
- 352 PDF objects out of 1000 (max. 8388607)
+ 370 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
