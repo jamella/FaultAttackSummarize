@@ -221,6 +221,65 @@ SB^{-1}(C_{7}\oplus K^{r}_{7}) \oplus SB^{-1}(C'_{7} \oplus K^{r}_{7} ) = 3(SB^{
 上述攻击可以被扩展到在倒数第三轮的输入状态上至多三个对角线上的值受影响的故障模型。此时可以列出类似上述所示等式组，具体的等式会稍微比较复杂，如果没有发生故障的对角线已知，等式组成的密钥区分器可以将猜测的4字节的密钥空间降低到$2^{24}$。在这样的故障模型下，使用四对正确错误密文对，最后一轮轮密钥可以以很大的概率确定。
 
 \subsubsection{RSA故障攻击}
+RSA是当前使用作为广泛的公钥密码算法，在电子商务，电子护照等诸多领域都有广泛的应用。RSA基于大整数分解的复杂性，算法描述非常简洁。第一篇故障攻击的论文便是针对RSA密码算法，自此之后，研究者提出了针对各种不同实现各种不同防护的RSA的故障攻击，有效地促进了RSA密码芯片的安全实现。本节将选取几种典型的故障攻击来进行说明。
+
+首先要介绍的是Bellcore实验室提出的首个故障攻击的实例，算法针对采用中国剩余定理(CRT)实现的RSA。CRT被用于加速指数运算，在加密的过程中需要做一个mod n的指数运算.由于n数量级比较大,这部分运算比较耗时。采用CRT实现的计算的方法如下
+$$C_{p}=M^{e}  mod p$$
+$$C_{q}=M^{e} mod q$$
+$$C = C_{p}\cdot \alpha+C_{q}\cdot\beta mod N$$
+其中$\alpha=q\cdot(q^{-1}mod p), \beta=p\cdot(p^{-1}mod q)$。假设攻击者可以再上式中计算$C_{q}$时注入故障,则对于此次运算有
+$$C_{p}=M^{e}  mod p$$
+$$C_{q} \neq M^{e}  mod q$$
+因此可得
+$$C^{d}=M mod p$$
+$$C^{d}\neq M mod q$$
+通过计算$\gcd(C^{d}-M mod N, N)=p$可以获得大整数N的一个素因子,也就破解了RSA算法.
+之后还有很多加了防护措施的实现,但是针对每种防护都可以找出合适的故障注入点并进行攻击.
+
+作者还同时提出了针对不使用CRT实现的RSA的攻击。假设解密指数的二进制表示为 $d=d_{n-1}d_{n-2}\cdots d_{2}d_{1}$，需要签名的消息为x，RSA的签名的实现为
+\begin{center}
+\begin{description}
+\item init y=x; z=1.
+\item main for k = 0, $\cdots$ ,n-1
+\item	If $d_{k}$ == 1 then z = z y (mod N)
+\item	y = $y^{2}$ (mod N)
+\item output z.
+\end{description}
+\end{center}
+使用的故障模型为在上述过程中的某个时间处寄存器z上的一个随机比特发生了翻转，并记错误签名为E'，不需要获得相应的正确签名。
+
+假设N为n比特，对于任意$1\le m\le n$，给出$\frac{n}{m}\log(2n)$个故障攻击者能在完成$O(\frac{2^{m}n^{3}\log^{2}(n)}{m^{2}})$次RSA加密的时间内以1/2的概率获得解密指数d。
+
+记$l=\frac{n}{m}\log(2n)$，$M_{1},\cdots,M_{l}\in Z_{N}$ 为l个随机选取的消息，$E_{i}=M^{d}_{i} mod N$为相应消息$M_{i}$的正确签名，$E'_{i}$为上述故障模型下$M_{i}$的故障签名。$k_{i}$表示对应相应的$E'_{i}$发生故障的位置，攻击者不知道$k_{i}$的具体值。不妨设$0\le k_{1}\le k_{2}\le\cdots\le k_{l}<n$。故障是随机注入并且是相互独立的，给定l，至少有一半的概率使得$k_{i+1}-k_{i}<m$对$i=1,\cdots ,l-1$都成立。
+下面将从最高位开始逐块恢复解密密钥d。假设已知比特位$d_{n-1}\cdots d_{k_{i}}$，初始时$i=l+1$表示所有比特都未知。下面算法恢复比特$d_{k_{i}-1}d_{k_{i}-2}\cdots d_{k_{i-1}}$。
+\begin{enumerate}
+\item for 所有长度 $r=1,2,3\cdots$ do
+\item for 所有候选的r比特向量$u_{k_{i}-1}u_{k_{i}-2}\cdots u_{k_{i}-r}$do
+\item $w = \sum_{j=k_{i}}^{n-1}{s_{j}2^{j}} + \sum_{k_{i}-r}^{k_{i}-1}{u_{j}2^{j}$
+\item 测试对于当前测试向量是否有某一错误签名$E'_{j},j=1,\cdots,l$满足
+$$\exists b\in\{0,\cdots ,n\} s.t. (E'_{j} + 2^{k}M_{j}^{w})^{e} = M_{j}(mod N)$$ 
+\item 如果找到满足上式的签名，输出$u_{k_{i}-1}u_{k_{i}-2}\cdots u_{k_{i}-r}$并停止。此时可得$k_{i-1}=k_{i}-r$并且$u_{d_{i}-1}d_{k_{i}-2}\cdots d_{k_{i-1}}=u_{k_{i}-1}u_{k_{i}-2}\cdots u_{k_{i}-r}$。
+\end{enumerate}
+依次从高到低可以获得完整的解密密钥 。
+
+
+最近的一篇这方面的研究论文是Eric Brier等人在CHES2011上发表.这篇文章也是攻击RSA-CRT的实现,但是故障注入点在由CRT计算C的时候的模数N.
+
+假设攻击者首先完成一次正确的加密获得正确的密文.第二次对同样密文加密,且发生如下故障
+$$C'=C_{p}\cdot\alpha+C_{q}\cdot\beta mod N'  其中 N'≠N$$
+并且N’已知.此时利用CRT可得
+$$v=C_{p}\cdot\alpha+C_{q}\cdot\beta mod N\cdot N'$$ 
+记N的比特长度为n, $N\cdot N'$是一个2n比特长的整数,又有$\alpha,\beta$的长度为n, $C_{p},C_{q}$的长度为n/2所以在整数范围内有
+$$v=C_{p}\cdot\alpha+C_{q}\cdot\beta$$
+故障攻击者获得几组这样的C,C'通过格基约减的方式就可以真正的分解大整数N.
+
+对这种攻击方法的一个自然的防护是是使用不需要N的CRT插值公式计算C,例如GARNER’s 公式,计算过程如下:
+$$t=C_{p}-C_{q} $$
+$$if t<0 then t=t+p $$
+$$C=C_{P}+(t\cdot\gamma mod p)\cdot q $$
+$$return (C)$$
+假定$p>q,\gamma=q^{-1} mod p$
+
 \subsubsection{ECC故障攻击}
 \subsubsection{其他算法包括轻量级算法的故障分析}
 \subsubsection{流密码和哈希函数的故障攻击简介}
